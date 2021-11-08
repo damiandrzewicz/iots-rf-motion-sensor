@@ -1,0 +1,395 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L moteino:MoteinoR6 U?
+U 1 1 6185BA0B
+P 4150 3500
+F 0 "U?" H 4150 2411 50  0000 C CNN
+F 1 "MoteinoR6" H 4150 2320 50  0000 C CNN
+F 2 "" H 3900 3350 50  0001 C CNN
+F 3 "" H 3900 3350 50  0001 C CNN
+	1    4150 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J?
+U 1 1 6185DB0E
+P 5650 4350
+F 0 "J?" H 5730 4342 50  0000 L CNN
+F 1 "CR2450 Battery Holder" H 5730 4251 50  0000 L CNN
+F 2 "" H 5650 4350 50  0001 C CNN
+F 3 "~" H 5650 4350 50  0001 C CNN
+	1    5650 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 6185E322
+P 5600 2800
+F 0 "R?" H 5670 2846 50  0000 L CNN
+F 1 "680k" H 5670 2755 50  0000 L CNN
+F 2 "" V 5530 2800 50  0001 C CNN
+F 3 "~" H 5600 2800 50  0001 C CNN
+	1    5600 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 6185E5F7
+P 5600 3300
+F 0 "R?" H 5670 3346 50  0000 L CNN
+F 1 "330" H 5670 3255 50  0000 L CNN
+F 2 "" V 5530 3300 50  0001 C CNN
+F 3 "~" H 5600 3300 50  0001 C CNN
+	1    5600 3300
+	1    0    0    -1  
+$EndComp
+Text GLabel 3500 3300 0    50   Input ~ 0
+Batt
+Text GLabel 5400 3050 0    50   Input ~ 0
+Batt
+Wire Wire Line
+	5600 2950 5600 3050
+Wire Wire Line
+	5600 3050 5400 3050
+Connection ~ 5600 3050
+Wire Wire Line
+	5600 3050 5600 3150
+$Comp
+L power:+3V0 #PWR?
+U 1 1 61860534
+P 4200 2350
+F 0 "#PWR?" H 4200 2200 50  0001 C CNN
+F 1 "+3V0" H 4215 2523 50  0000 C CNN
+F 2 "" H 4200 2350 50  0001 C CNN
+F 3 "" H 4200 2350 50  0001 C CNN
+	1    4200 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V0 #PWR?
+U 1 1 61860DF0
+P 5350 4250
+F 0 "#PWR?" H 5350 4100 50  0001 C CNN
+F 1 "+3V0" H 5365 4423 50  0000 C CNN
+F 2 "" H 5350 4250 50  0001 C CNN
+F 3 "" H 5350 4250 50  0001 C CNN
+	1    5350 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 618612A2
+P 5600 3600
+F 0 "#PWR?" H 5600 3350 50  0001 C CNN
+F 1 "GND" H 5605 3427 50  0000 C CNN
+F 2 "" H 5600 3600 50  0001 C CNN
+F 3 "" H 5600 3600 50  0001 C CNN
+	1    5600 3600
+	1    0    0    -1  
+$EndComp
+Text GLabel 3500 3700 0    50   Input ~ 0
+SDA
+Text GLabel 3500 3800 0    50   Input ~ 0
+SCL
+Wire Wire Line
+	5450 4350 5350 4350
+Wire Wire Line
+	5350 4350 5350 4250
+$Comp
+L power:GND #PWR?
+U 1 1 61862A91
+P 5350 4550
+F 0 "#PWR?" H 5350 4300 50  0001 C CNN
+F 1 "GND" H 5355 4377 50  0000 C CNN
+F 2 "" H 5350 4550 50  0001 C CNN
+F 3 "" H 5350 4550 50  0001 C CNN
+	1    5350 4550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5450 4450 5350 4450
+Wire Wire Line
+	5350 4450 5350 4550
+Wire Wire Line
+	5600 3450 5600 3600
+Wire Wire Line
+	4200 2350 4200 2500
+Wire Wire Line
+	3650 3300 3500 3300
+Wire Wire Line
+	3650 3700 3500 3700
+Wire Wire Line
+	3650 3800 3500 3800
+Wire Wire Line
+	5600 2400 5600 2650
+NoConn ~ 4650 2950
+NoConn ~ 4650 3050
+NoConn ~ 4650 3150
+NoConn ~ 4650 3250
+NoConn ~ 4650 3350
+NoConn ~ 4650 3450
+NoConn ~ 4650 3650
+NoConn ~ 4650 3750
+NoConn ~ 4650 3850
+NoConn ~ 4650 3950
+NoConn ~ 4650 4050
+NoConn ~ 4650 4150
+NoConn ~ 3650 2950
+NoConn ~ 3650 3050
+NoConn ~ 3650 3150
+NoConn ~ 3650 3500
+NoConn ~ 3650 3600
+NoConn ~ 3650 3900
+NoConn ~ 3650 4000
+Wire Notes Line
+	3150 2000 3150 4800
+Wire Notes Line
+	5100 4800 5100 2000
+Wire Notes Line
+	5100 2000 3150 2000
+Wire Notes Line
+	5150 3850 5950 3850
+Wire Notes Line
+	5950 3850 5950 2000
+Wire Notes Line
+	5950 2000 5150 2000
+Wire Notes Line
+	5150 2000 5150 3850
+Wire Notes Line
+	5150 3900 5150 4800
+Wire Notes Line
+	6700 4800 6700 3900
+Wire Notes Line
+	6700 3900 5150 3900
+Text Notes 3200 2100 0    50   ~ 0
+Moteino R6 with RFM69HCW
+Text Notes 5200 2200 0    50   ~ 0
+Battery Level \nMeasure
+Text Notes 5700 4000 0    50   ~ 0
+CR2450 Holder
+$Comp
+L power:+3V0 #PWR?
+U 1 1 61889CE5
+P 5600 2400
+F 0 "#PWR?" H 5600 2250 50  0001 C CNN
+F 1 "+3V0" H 5615 2573 50  0000 C CNN
+F 2 "" H 5600 2400 50  0001 C CNN
+F 3 "" H 5600 2400 50  0001 C CNN
+	1    5600 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP C?
+U 1 1 61894DB0
+P 6300 3250
+F 0 "C?" H 6418 3296 50  0000 L CNN
+F 1 "47u" H 6418 3205 50  0000 L CNN
+F 2 "" H 6338 3100 50  0001 C CNN
+F 3 "~" H 6300 3250 50  0001 C CNN
+	1    6300 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V0 #PWR?
+U 1 1 61895242
+P 6300 2950
+F 0 "#PWR?" H 6300 2800 50  0001 C CNN
+F 1 "+3V0" H 6315 3123 50  0000 C CNN
+F 2 "" H 6300 2950 50  0001 C CNN
+F 3 "" H 6300 2950 50  0001 C CNN
+	1    6300 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 61895545
+P 6300 3600
+F 0 "#PWR?" H 6300 3350 50  0001 C CNN
+F 1 "GND" H 6305 3427 50  0000 C CNN
+F 2 "" H 6300 3600 50  0001 C CNN
+F 3 "" H 6300 3600 50  0001 C CNN
+	1    6300 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6300 3100 6300 2950
+Wire Wire Line
+	6300 3400 6300 3600
+Wire Notes Line
+	6000 2600 6000 3850
+Wire Notes Line
+	6000 3850 6700 3850
+Wire Notes Line
+	6700 3850 6700 2600
+Wire Notes Line
+	6700 2600 6000 2600
+Text Notes 6050 2700 0    50   ~ 0
+Power Booster
+$Comp
+L Connector_Generic:Conn_01x03 J?
+U 1 1 618A97BD
+P 7400 4400
+F 0 "J?" H 7480 4442 50  0000 L CNN
+F 1 "HC-SR501" H 7480 4351 50  0000 L CNN
+F 2 "" H 7400 4400 50  0001 C CNN
+F 3 "~" H 7400 4400 50  0001 C CNN
+	1    7400 4400
+	1    0    0    -1  
+$EndComp
+Text GLabel 7100 4400 0    50   Input ~ 0
+OUT
+$Comp
+L power:GND #PWR?
+U 1 1 618AA0EC
+P 7100 4600
+F 0 "#PWR?" H 7100 4350 50  0001 C CNN
+F 1 "GND" H 7105 4427 50  0000 C CNN
+F 2 "" H 7100 4600 50  0001 C CNN
+F 3 "" H 7100 4600 50  0001 C CNN
+	1    7100 4600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7200 4300 7100 4300
+Wire Wire Line
+	7100 4300 7100 4250
+Wire Wire Line
+	7200 4400 7100 4400
+Wire Wire Line
+	7200 4500 7100 4500
+Wire Wire Line
+	7100 4500 7100 4600
+$Comp
+L Transistor_BJT:BC549 Q?
+U 1 1 618AB2C7
+P 7650 3400
+F 0 "Q?" H 7841 3446 50  0000 L CNN
+F 1 "BC549" H 7841 3355 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 7850 3325 50  0001 L CIN
+F 3 "http://www.fairchildsemi.com/ds/BC/BC547.pdf" H 7650 3400 50  0001 L CNN
+	1    7650 3400
+	1    0    0    -1  
+$EndComp
+Text GLabel 3500 2850 0    50   Input ~ 0
+AREF
+Wire Wire Line
+	3650 2850 3500 2850
+$Comp
+L Device:R R?
+U 1 1 618B3B81
+P 7200 3400
+F 0 "R?" H 7270 3446 50  0000 L CNN
+F 1 "2.2k" H 7270 3355 50  0000 L CNN
+F 2 "" V 7130 3400 50  0001 C CNN
+F 3 "~" H 7200 3400 50  0001 C CNN
+	1    7200 3400
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 618B47A1
+P 7750 3700
+F 0 "#PWR?" H 7750 3450 50  0001 C CNN
+F 1 "GND" H 7755 3527 50  0000 C CNN
+F 2 "" H 7750 3700 50  0001 C CNN
+F 3 "" H 7750 3700 50  0001 C CNN
+	1    7750 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 618B4A7F
+P 7750 2950
+F 0 "R?" H 7820 2996 50  0000 L CNN
+F 1 "10k" H 7820 2905 50  0000 L CNN
+F 2 "" V 7680 2950 50  0001 C CNN
+F 3 "~" H 7750 2950 50  0001 C CNN
+	1    7750 2950
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_PHOTO R?
+U 1 1 618B52C5
+P 7750 2550
+F 0 "R?" H 7820 2596 50  0000 L CNN
+F 1 "5k-10k" H 7820 2505 50  0000 L CNN
+F 2 "" V 7800 2300 50  0001 L CNN
+F 3 "~" H 7750 2500 50  0001 C CNN
+	1    7750 2550
+	1    0    0    -1  
+$EndComp
+Text GLabel 7750 2300 1    50   Input ~ 0
+AREF
+$Comp
+L power:+3V0 #PWR?
+U 1 1 618B5E0D
+P 7100 4250
+F 0 "#PWR?" H 7100 4100 50  0001 C CNN
+F 1 "+3V0" H 7115 4423 50  0000 C CNN
+F 2 "" H 7100 4250 50  0001 C CNN
+F 3 "" H 7100 4250 50  0001 C CNN
+	1    7100 4250
+	1    0    0    -1  
+$EndComp
+Text GLabel 4800 3550 2    50   Input ~ 0
+PH_EN
+Text GLabel 3500 3400 0    50   Input ~ 0
+PH_ADC
+Wire Notes Line
+	3350 4800 6700 4800
+Wire Wire Line
+	7750 2300 7750 2400
+Wire Wire Line
+	7750 2700 7750 2750
+Wire Wire Line
+	7750 3100 7750 3200
+Wire Wire Line
+	7450 3400 7350 3400
+Wire Wire Line
+	4800 3550 4650 3550
+Wire Wire Line
+	3650 3400 3500 3400
+Text GLabel 6950 3300 1    50   Input ~ 0
+PH_EN
+Wire Wire Line
+	7050 3400 6950 3400
+Wire Wire Line
+	6950 3400 6950 3300
+Text GLabel 7500 2750 0    50   Input ~ 0
+PH_EN
+Wire Wire Line
+	7750 2750 7500 2750
+Connection ~ 7750 2750
+Wire Wire Line
+	7750 2750 7750 2800
+Wire Notes Line
+	6850 2000 6850 3950
+Wire Notes Line
+	6850 3950 8200 3950
+Wire Notes Line
+	8200 3950 8200 2000
+Wire Notes Line
+	8200 2000 6850 2000
+Wire Notes Line
+	6850 4000 6850 4850
+Wire Notes Line
+	6850 4850 7900 4850
+Wire Notes Line
+	7900 4850 7900 4000
+Wire Notes Line
+	7900 4000 6850 4000
+$EndSCHEMATC
